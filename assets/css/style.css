@@ -11,6 +11,8 @@
   }
 
   header h1 {
+      display: flex;
+      flex: 2 1 auto;
       background-color: rgb(197, 248, 229);
       color: rgb(68, 66, 66);
       width: fit-content;
@@ -23,7 +25,7 @@
 
   nav li {
       color: rgb(197, 248, 229);
-      display: inline-block;
+      display: inline-flex;
       margin-left: 2em;
       margin-bottom: 1em;
   }
@@ -50,18 +52,16 @@
       background-color: lavender;
   }
 
-  main section {
+  main section, footer {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-  }
-  main h2 {
-      align-items: flex-start;
   }
 
   h2 {
       align-items: flex-start;
       border-right: double;
+      min-width: 200px;
   }
   main, footer {
     color: rgb(92, 69, 92);
@@ -71,7 +71,7 @@
     box-sizing: content-box;
     width: 81.5%;
     border: solid rgb(197, 248, 229) .5em;
-    margin: .1em;
+    margin: 1em;
     float: right; 
 }
   .img {
@@ -83,7 +83,11 @@
       float: right;
   }
 
+  footer h2, ul{
+      margin-bottom: .3em;
+  }
   footer ul li {
-      display: inline-block;
+      display: inline-flex;
+      justify-content: space-around;
       margin-left: 25px;
   }
