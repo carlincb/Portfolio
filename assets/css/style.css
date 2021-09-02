@@ -14,7 +14,7 @@
       float: right;
   }
 
-  nav ul li{
+  nav ul li {
       color: rgb(197, 248, 229);
       display: inline-block;
       margin-left: 25px;
@@ -29,3 +29,7 @@
 
   }
 
+  footer ul li {
+      display: inline-block;
+      margin-left: 25px;
+  }
