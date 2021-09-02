@@ -1,0 +1,31 @@
+  * {
+    padding: 0;  
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  header {
+    display: block;
+    float: center;
+    background-color: rgb(68, 66, 66);
+  }
+
+  nav {
+      float: right;
+  }
+
+  nav ul li{
+      color: rgb(197, 248, 229);
+      display: inline-block;
+      margin-left: 25px;
+  }
+  
+#banner {
+    display: block;
+    background-image: url("../images/majid-gheidarlou-LuI6euS7Dno-unsplash.jpg");
+    height: 300px;
+}
+  body {
+
+  }
+
