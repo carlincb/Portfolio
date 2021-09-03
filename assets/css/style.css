@@ -113,7 +113,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      width: 100%;
+      width: 50%;
       border: solid rgb(197, 248, 229) .4em;
       float: right;
       margin-bottom: .4em;
@@ -147,4 +147,9 @@
           border-bottom: 4px solid rgb(68, 66, 66);
           border-right: none;
       }
+  }
+ 
+  @media screen and (max-width: 320px) {
+    #banner h2 {
+        margin: 0em;
   }
