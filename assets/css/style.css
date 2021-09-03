@@ -65,7 +65,7 @@
 
   h2 {
       align-items: flex-start;
-      border-right: 5px solid rgb(68, 66, 66);
+      border-right: 4px solid rgb(68, 66, 66);
       min-width: 200px;
       margin-top: 5px;
       margin-bottom: 5px;
@@ -86,7 +86,7 @@
       background-color: rgb(197, 248, 229);
       color: rgb(68, 66, 66);
       width: fit-content;
-      margin-top: .6em;
+      margin-top: .3em;
       font-size: 2.5em; 
   }
    .img-1 {
@@ -94,9 +94,9 @@
        flex-direction: row;
        flex-wrap: wrap;
        width: 100%;
-       border: solid rgb(197, 248, 229) .3em;
-       margin: .1em;
+       border: solid rgb(197, 248, 229) .4em;
        float: right;
+       margin-bottom: .4em;
     } 
 
   .img {
@@ -104,13 +104,23 @@
       flex-direction: row;
       flex-wrap: wrap;
       width: 100%;
-      border: solid rgb(197, 248, 229) .3em;
-      margin: .1em;
+      border: solid rgb(197, 248, 229) .4em;
       float: right;
+      margin-bottom: .4em;
   }  
  
   footer ul li {
       display: inline-flex;
       justify-content: space-around;
       margin-left: 25px;
+  }
+  @media screen and (max-width: 940px) {
+      main section, footer {
+          flex-direction: column;
+      }
+
+      h2 {
+          border-bottom: 4px solid rgb(68, 66, 66);
+          border-right: none;
+      }
   }
