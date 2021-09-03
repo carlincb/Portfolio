@@ -53,6 +53,13 @@
         font-size: 2em;
     }
 
+    #banner img {
+        height: 13em;
+        width: 13em;
+        float: left;
+        margin-left: 4em;
+        margin-top: 1em;
+    }
   body {
       background-color: rgb(236, 236, 243);
   }
@@ -128,6 +135,10 @@
   }
   
   @media screen and (max-width: 940px) {
+      #banner img{
+          height: 0em;
+          width: 0em;
+      }
       main section, footer {
           flex-direction: column;
       }
