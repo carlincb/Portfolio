@@ -147,6 +147,9 @@
           border-bottom: 4px solid rgb(68, 66, 66);
           border-right: none;
       }
+      .img {
+        width: 100%
+    }
   }
  
   @media screen and (max-width: 320px) {
