@@ -41,7 +41,7 @@
     }
 
     #banner h2 {
-        box-sizing:border-box;
+        box-sizing: border-box;
         width: fit-content;
         border: outset rgba(68, 66, 66, 0.253) .1em;
         border-radius: .1em;
@@ -54,7 +54,7 @@
     }
 
   body {
-      background-color: lavender;
+      background-color: rgb(236, 236, 243);
   }
 
   main section, footer {
@@ -74,6 +74,8 @@
 
   }
   #about p {
+      display: flex;
+      flex-wrap: wrap;
       margin: 10px;
   }
   main, footer {
@@ -97,6 +99,7 @@
        border: solid rgb(197, 248, 229) .4em;
        float: right;
        margin-bottom: .4em;
+       opacity: .5;
     } 
 
   .img {
@@ -107,13 +110,23 @@
       border: solid rgb(197, 248, 229) .4em;
       float: right;
       margin-bottom: .4em;
+      opacity: .5;
   }  
  
   footer ul li {
       display: inline-flex;
-      justify-content: space-around;
+      justify-content: center;
       margin-left: 25px;
   }
+  a:hover {
+    background-color: rgb(197, 248, 229);
+    color:rgb(68, 66, 66);
+  }
+
+  img:hover {
+      opacity: 1;
+  }
+  
   @media screen and (max-width: 940px) {
       main section, footer {
           flex-direction: column;
