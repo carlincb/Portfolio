@@ -1,121 +1,118 @@
-  * {
-      margin: 0;
-      padding: 0;  
-      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-
-  header {
-      background-color: rgb(68, 66, 66);
-      width: 100%;
-  }
-
-  header h1 {
-      display: inline-block;
-      /* flex: 2 1 auto; */
-      background-color: rgb(197, 248, 229);
-      color: rgb(68, 66, 66);
-      width: fit-content;
-      margin-top: .6em;
-      font-size: 2.5em;
-  }
-  nav {
-      float: right;
-  }
-
-  nav li {
-      color: rgb(197, 248, 229);
-      display: inline-flex;
-      justify-content: space-around;
-      font-size: 1.5em;
-      margin-right: 1.5em;
-      margin-bottom: 1em;
-  }
-
-  #banner {
-      /* display: block; */
-      background-image: url("../images/majid-gheidarlou-LuI6euS7Dno-unsplash.jpg");
-      height: 15em;
-      width: 100%;
+* {
+    margin: 0;
+    padding: 0;  
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
-    #banner h2 {
-        box-sizing: border-box;
-        width: fit-content;
-        border: outset rgba(68, 66, 66, 0.253) .1em;
-        border-radius: .1em;
-        background-color: rgb(197, 248, 229);
-        color: rgb(68, 66, 66);
-        float: right;
-        margin-top: 5em;
-        margin-right: 5em;
-        font-size: 2em;
+header {
+    background-color: rgb(68, 66, 66);
+    width: 100%;
+    height: 5%;
     }
 
-    #banner img {
-        height: 13em;
-        width: 13em;
-        float: left;
-        margin-left: 4em;
-        margin-top: 1em;
+header h1 {
+    display: inline-block;
+    background-color: rgb(197, 248, 229);
+    color: rgb(68, 66, 66);
+    font-size: 2.5em;
+    margin-top: .3em;
+    margin-bottom: .3em;
     }
-  body {
-      background-color: rgb(236, 236, 243);
-  }
 
-  main section, footer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
+nav {
+    float: right;
+    }
 
-  h2 {
-      /* align-items: flex-start; */
-      border-right: 4px solid rgb(68, 66, 66);
-      min-width: 15%;
-      text-align: right;
-      /* margin-top: 5px;
-      margin-bottom: 5px;
-      margin-right: 1px; */
-      font-size: 2em;
-  }
+nav ul li {
+    color: rgb(197, 248, 229);
+    display: inline-block;
+    justify-content: space-around;
+    font-size: 1.5em;
+    margin-right: 1.5em;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    }
 
-  #about p {
-      display: flex;
-      flex-wrap: wrap;
-      margin: .5em;
-  }
-
-  main, footer {
-    color: rgb(92, 69, 92);
-  }
-
-  #parent {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-  #parent .child {
-      display: inline;
-      flex-wrap: wrap; 
-      flex-basis: 50%; 
-  }
-  #project-1 {
-      position: relative;
-      color: rgb(68, 66, 66);
-  }
-  
-  #project-1 > #top-left-1 {
-      position: absolute;
-      top: 1em;
-      background-color:rgb(197, 248, 229);
-      width: fit-content;
-      font-size: 2em;
-  }
-
-  #project-2 {
+#banner {
     position: relative;
     color: rgb(68, 66, 66);
+    background-image: url("../images/TeaRoom.png");
+    height: 15em;
+    width: 100%;
+    }
+
+#banner > #subtitle {
+    position: absolute;
+    top: 1em;
+    background-color:rgb(197, 248, 229);
+    width: fit-content;
+    font-size: 2em;
+    margin-top: 5em;
+    }
+
+#banner img {
+    height: 10em;
+    width:10em;
+    margin-top: 1em;
+    margin-left: 2.5em;
+    }
+
+body {
+    background-color: rgb(236, 236, 243);
+    }
+
+main section, footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+h2 {
+    border-right: 4px solid rgb(68, 66, 66);
+    min-width: 15%;
+    text-align: right;
+    font-size: 2em;
+    }
+
+#about p {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5em;
+    }
+
+main, footer {
+    color: rgb(92, 69, 92);
+    }
+
+#parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+#parent .child {
+    display: inline;
+    flex-wrap: wrap; 
+    flex-basis: 50%; 
 }
+
+#project-1 {
+    position: relative;
+    color: rgb(68, 66, 66);
+    }
+
+#project-1 > #top-left-1 {
+    position: absolute;
+    top: 1em;
+    background-color:rgb(197, 248, 229);
+    width: fit-content;
+    font-size: 2em;
+    }
+
+#project-2 {
+    position: relative;
+    color: rgb(68, 66, 66);
+    }
 
 #project-2 > #top-left-2 {
     position: absolute;
@@ -128,7 +125,7 @@
 #project-3 {
     position: relative;
     color: rgb(68, 66, 66);
-}
+    }
     
 #project-3 > #top-left-3 {
     position: absolute;
@@ -137,10 +134,11 @@
     width: fit-content;
     font-size: 2em;
     }
+
 #project-4 {
     position: relative;
     color: rgb(68, 66, 66);
-}
+    }
     
 #project-4 > #top-left-4 {
     position: absolute;
@@ -150,71 +148,64 @@
     font-size: 2em;
     }
    
-    #project-5 {
-        position: relative;
-        color: rgb(68, 66, 66);
+#project-5 {
+    position: relative;
+    color: rgb(68, 66, 66);
     }
         
-    #project-5 > #top-left-5 {
-        position: absolute;
-        top: 1em;
-        background-color:rgb(197, 248, 229);
-        width: fit-content;
-        font-size: 2em;
-        }
+#project-5 > #top-left-5 {
+    position: absolute;
+    top: 1em;
+    background-color:rgb(197, 248, 229);
+    width: fit-content;
+    font-size: 2em;
+    }
         
-   .img-1 {
-       /* display: flex;
-       flex-direction: row;
-       flex-wrap: wrap; */
-       width: 100%;
-       border: solid rgb(197, 248, 229) .4em;
-       margin-bottom: .4em;
-       opacity: .5;
+.img-1 {
+    width: 100%;
+    border: solid rgb(197, 248, 229) .4em;
+    margin-bottom: .4em;
+    opacity: .5;
     } 
 
-  .img {
-      /* display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; */
-      width: 100%;
-      border: solid rgb(197, 248, 229) .4em;
-      /* float: right; */
-      /* margin-bottom: .4em; */
-      opacity: .5;
-  }  
+.img {
+    width: 100%;
+    border: solid rgb(197, 248, 229) .4em;
+    opacity: .5;
+    }  
  
-  footer ul li {
-      display: inline-flex;
-      justify-content: center;
-      margin-left: 25px;
-  }
-  a:hover {
+footer ul li {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 25px;
+    }
+
+a:hover {
     background-color: rgb(197, 248, 229);
     color:rgb(68, 66, 66);
-  }
+    }
 
-  img:hover {
-      opacity: 1;
-  }
+img:hover {
+    opacity: 1;
+    }
   
-  @media screen and (max-width: 940px) {
-      #banner img{
-          height: 0em;
-          width: 0em;
+@media screen and (max-width: 940px) {
+    #banner img{
+        height: 0em;
+        width: 0em;
       }
-      main section, footer {
-          flex-direction: column;
+    main section, footer {
+        flex-direction: column;
       } 
 
-      h2 {
-          border-bottom: 4px solid rgb(68, 66, 66);
-          border-right: none;
+    h2 {
+        border-bottom: 4px solid rgb(68, 66, 66);
+        border-right: none;
       }
     }
-  }
  
   @media screen and (max-width: 320px) {
     #banner h2 {
         margin: 0em;
+     }
   }
