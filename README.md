@@ -49,8 +49,16 @@ Although we were free to use some creativity, DU's Coding Bootcamp provided a Mo
 ## Usage
 - Please see below for examples of this webpage, which demonstrate its responsive design:
 
+### Desktop View
+
 ![1](assets/images/DesktopView.png)
+
+### iPad View
+
 ![2](assets/images/iPadView.png)
+
+### iPhone View
+
 ![3](assets/images/iPhoneView.png)
 
 ## Credits
