@@ -12,11 +12,12 @@
     <!-- Added CSS link. -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<!-- Beginning of body of webpage. -->
 <body>
     <!-- Beginning of header section. -->
     <header>
         <h1>Colleen Fimister</h1>
-        <!-- Nav bar with list which navigates to the appropiate sections of the website and links to my resume. Id tags used to connect to different parts of the webpage. Included target="_blank" tag to automatically open link in new tab. -->
+        <!-- Nav bar with list which navigates to the appropiate sections of the website and links to my resume. Id tags used to connect to different parts of the webpage. Included target="_blank" tag to automatically open link in new tab. The ul and li tags are used for list of webpage's content. -->
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
@@ -26,11 +27,13 @@
                 </ul>
             </nav>
     </header>
+    <!-- Beginning of main content of webpage. -->
     <main>
-        <!-- Section holding banner, subtitle, and profile picture. -->
+        <!-- Section holding banner, subtitle, and profile picture. Banner id made as parent of "subtitle" id to control position/appearance of items in relation to each other. -->
         <section id="banner">
             <!-- Figure tag included for semantic reasons. -->
             <figure>
+                <!-- Link to image with alt tag included for accessibility. -->
                 <img src="assets/images/Profile-Pic.png" alt="Profile Picture">
             </figure>
             <div id="subtitle">Software Engineer</div>
@@ -47,12 +50,12 @@
                 I am highly organized and prioritize good communication and customer care within any team or client base. I look forward to working with you!
             </p>
         </section>
-        <!-- Section including article tags with links to projects following semantic HTML design. Id tag linking to nav bar.-->
+        <!-- Section including article tags with links to projects following semantic HTML design. Work id tag included linking to nav bar.-->
         <section id="work">
             <h2>Work</h2>
             <!-- Div tag to help maintain relative positioning of different articles for good responsive design. -->
             <div>
-                <!-- Project-1 id links included as a parent to "top-left-1" to control appearance and position of the label of the image/project -->
+                <!-- Project-1 id link included as a parent to "top-left-1" to control appearance and position of the label of the image/project -->
             <article id="project-1">
                 <!-- Included target="_blank" tag to automatically open link in new tab. -->
                     <a href="https://carlincb.github.io/Refactored_Code/" target="_blank">
@@ -65,30 +68,43 @@
                     <!-- Child of parent id "project-1." Together they control position/appearance of label on project/image. -->
                 <div id="top-left-1">Refactored Code</div>
             </article>
-            <!-- Parent/div tag included to control layout of future projects and  -->
+            <!-- The "parent" div tag is included to control layout of future projects/images or the "child" class for good responsive view on desktop, tablet, and mobile devices.  -->
             <div id="parent">
+                <!-- Project-2 id link included as a parent to "top-left-2" to control appearance and position of the label of the image/project -->
             <article class="child" id="project-2">
+                <!-- Figure tag included for semantic reasoning. -->
                 <figure>
+                    <!-- Included the "href="#" within the a tag so that page moves back up to the top of the page. This functions as nice placeholder until proper a tags can used to link to upcoming projects. The alt tag is included for accessibility. -->
                     <a href="#"><img class="img" src="assets/images/jay-chen-vaCrbDAztKU-unsplash.jpg" alt="Project 2"></a>
                 </figure>
+                <!-- Child of parent id "project-2." Together they control position/appearance of label on project/image. -->
                 <div id="top-left-2">Project 2: Coming Soon!</div>
             </article>
+            <!-- The "child" class is being used with "parent" id to control layout and responsive design of images/projects. The id tag "project-3" with its child "top-left-3" is used to control positioning of label on image. -->
             <article class="child" id="project-3">
+                <!-- Figure tag included for semantic reasoning. -->
                 <figure>
+                     <!-- Included the "href="#" within the a tag so that page moves back up to the top of the page. This functions as nice placeholder until proper a tags can used to link to upcoming projects. The alt tag is included for accessibility. -->
                     <a href="#"><img class="img" src="assets/images/jay-chen-vaCrbDAztKU-unsplash.jpg" alt="Project 3"></a>
                 </figure>
                 <div id="top-left-3">Project 3: Coming Soon!</div>
             </article>
             </div>
+            <!-- The "parent" id is being used with "child" class to control layout and responsive design of images/projects. The id tag "project-4" with its child "top-left-4" is used to control positioning of label on image. -->
             <div id="parent">
             <article class="child" id="project-4">
+                <!-- Figure tag included for semantic reasoning. -->
                 <figure>
+                    <!-- Included the "href="#" within the a tag so that page moves back up to the top of the page. This functions as nice placeholder until proper a tags can used to link to upcoming projects. The alt tag is included for accessibility. -->
                     <a href="#"><img class="img" src="assets/images/jay-chen-vaCrbDAztKU-unsplash.jpg" alt="Project 4"></a>
                 </figure>
                 <div id="top-left-4">Project 4: Coming Soon!</div>
             </article>
+            <!-- The "child" class is being used with "parent" id to control layout and responsive design of images/projects. The id tag "project-5" with its child "top-left-5" is used to control positioning of label on image. -->
             <article class="child" id="project-5">
+                <!-- Figure tag included for semantic reasoning. -->
                 <figure>
+                    <!-- Included the "href="#" within the a tag so that page moves back up to the top of the page. This functions as nice placeholder until proper a tags can used to link to upcoming projects. The alt tag is included for accessibility. -->
                     <a href="#"><img class="img" src="assets/images/jay-chen-vaCrbDAztKU-unsplash.jpg" alt="Project 5"></a>
                 </figure>
                 <div id="top-left-5">Project 5: Coming Soon!</div>
@@ -96,8 +112,11 @@
             </div>
             </div>
         </section>
+    </main>
+    <!-- Footer id "contact" included to connect to nav bar. -->
     <footer id="contact">
         <h2>Contact Me</h2>
+        <!-- Included specialized a tags to link to phone and email, so that the device is automatically prompted to call or email using installed software on the device. Included target="_blank" tag to automatically open links in new tabs. The ul tag is used to house the li tags to form a list of ways to contact me. -->
         <ul>
             <li><a href="tel:936.225.2436" target="_blank">936.225.2436</a></li>
             <li></li><a href="mailto:carlin.colleen@gmail.com" target="_blank">carlin.colleen@gmail.com</a></li>
