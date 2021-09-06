@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- "Viewport meta tag included for good responsive design." -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Added title -->
+    <!-- Added title. -->
     <title>Portfolio of Colleen Fimister</title>
-    <!-- Added reset.css link -->
+    <!-- Added reset.css link. -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <!-- Added CSS link -->
+    <!-- Added CSS link. -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Beginning of header section. -->
     <header>
         <h1>Colleen Fimister</h1>
+        <!-- Nav bar with list which navigates to the appropiate sections of the website and links to my resume. Id tags used to connect to different parts of the webpage. Included target="_blank" tag to automatically open link in new tab. -->
             <nav>
                 <ul>
-                    
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#contact">Contact Me</a></li>
@@ -25,12 +27,15 @@
             </nav>
     </header>
     <main>
+        <!-- Section holding banner, subtitle, and profile picture. -->
         <section id="banner">
+            <!-- Figure tag included for semantic reasons. -->
             <figure>
                 <img src="assets/images/Profile-Pic.png" alt="Profile Picture">
             </figure>
             <div id="subtitle">Software Engineer</div>
         </section>
+        <!-- About Me section with my bio in a paragraph tag. Id tag used to link to nav bar. -->
         <section id="about">
             <h2>About Me</h2>
             <p>
@@ -42,16 +47,25 @@
                 I am highly organized and prioritize good communication and customer care within any team or client base. I look forward to working with you!
             </p>
         </section>
+        <!-- Section including article tags with links to projects following semantic HTML design. Id tag linking to nav bar.-->
         <section id="work">
             <h2>Work</h2>
+            <!-- Div tag to help maintain relative positioning of different articles for good responsive design. -->
             <div>
+                <!-- Project-1 id links included as a parent to "top-left-1" to control appearance and position of the label of the image/project -->
             <article id="project-1">
+                <!-- Included target="_blank" tag to automatically open link in new tab. -->
                     <a href="https://carlincb.github.io/Refactored_Code/" target="_blank">
-                    <figure><img class="img-1" src="assets/images/Horiseon.png" alt="Refactoring Project">
+                        <!-- Figure tag included for semantic reasons. -->
+                    <figure>
+                        <!-- Image tag included for visualization. -->
+                        <img id="img-1" src="assets/images/Horiseon.png" alt="Refactoring Project">
                     </figure>
-                </a>
+                    </a>
+                    <!-- Child of parent id "project-1." Together they control position/appearance of label on project/image. -->
                 <div id="top-left-1">Refactored Code</div>
             </article>
+            <!-- Parent/div tag included to control layout of future projects and  -->
             <div id="parent">
             <article class="child" id="project-2">
                 <figure>
