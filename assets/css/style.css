@@ -128,7 +128,7 @@ h2 {
 footer {
     margin-bottom: .5em;
     }
-/* List of contact methods included here. Flex properties set for responsiveness and margins set for best appearance. */
+/* List of contact methods included here. Flex properties set for responsiveness and margins set for best appearance. Added default font-size. */
 footer ul li {
     display: inline-flex;
     justify-content: space-around;
