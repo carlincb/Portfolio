@@ -1,194 +1,209 @@
 /* General framework for paper layout set. No margins or fonts by default. Default fonts set. */
 * {
-    margin: 0;
-    padding: 0;  
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
+  font-family: "Indie Flower", cursive;
+}
 /* Default size of font set. */
 html {
-    font-size:16px;
-    }
+  font-size: 62.5%;
+}
 /* Background color of webpage set. */
 body {
-    background-color: rgb(236, 236, 243);
-    }
+  background-color: rgb(255, 255, 255);
+}
 /* Background color of header set with width and height. Percentages included for measurements for responsive design.*/
 header {
-    background-color: rgb(68, 66, 66);
-    width: 100%;
-    height: 5%;
-    }
+  background-color: rgb(68, 66, 66);
+  width: 100%;
+  height: 10%;
+}
 /* Text design of header set. Flex properties set for responsive design. Font color, size, and background box of text laid out. The measurement of "em" included throughout for responsive design. */
 header h1 {
-    display: inline-flex;
-    background-color: rgb(197, 248, 229);
-    color: rgb(68, 66, 66);
-    font-size: 2.5em;
-    margin-top: .3em;
-    margin-bottom: .3em;
-    }
+  display: inline-flex;
+  background-color: rgb(197, 248, 229);
+  color: rgb(68, 66, 66);
+  font-size: 5rem;
+  padding-right: 0.9rem;
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+}
 /* Nav bar set to float right for good responsive design. */
 nav {
-    float: right;
-    }
+  float: right;
+}
 /* Nav bar list set up to follow flex design for responsiveness. Spacing, margins and font-size set. */
 nav ul li {
-    display: inline-flex;
-    justify-content: space-around;
-    font-size: 1.5em;
-    margin-right: 1.5em;
-    margin-top: .5em;
-    margin-bottom: 1em;
-    }
+  display: inline-flex;
+  justify-content: space-around;
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
 /* Banner or background image set. Font color of child "subtitle" set. Image of banner included. Height set. Width set to stretch across the whole viewport.*/
 #banner {
-    position: relative;
-    color: rgb(68, 66, 66);
-    background-image: url("../images/TeaRoom.png");
-    height: 15em;
-    width: 100%;
-    }
+  position: relative;
+  color: rgb(68, 66, 66);
+  background-image: url("../images/TeaRoom.png");
+  height: 25rem;
+  width: 100%;
+}
 /* Positioning of child "subtitle" set by child and parent "banner." Formatting of font and background box for text of subtitle finished with margins, color, and sizing. */
 #banner > #subtitle {
-    position: absolute;
-    top: 1em;
-    background-color:rgb(197, 248, 229);
-    width: fit-content;
-    font-size: 2em;
-    margin-top: 5em;
-    }
+  float: right;
+  top: 10rem;
+  background-color: rgb(197, 248, 229);
+  width: fit-content;
+  height: fit-content;
+  font-size: 4rem;
+  margin-top: 17rem;
+  padding-right: 0.2rem;
+  padding-left: 0.9rem;
+}
 /* Profile picture included with height and width set and margins to position it within banner background image. */
 #banner img {
-    height: 10em;
-    width:10em;
-    margin-top: 1em;
-    margin-left: 2.5em;
-    }
+  height: 19rem;
+  width: 19rem;
+  margin-top: 2.7rem;
+  margin-left: 2.5rem;
+}
 /* Main section and footer set to flex to ensure responsive design of objects. Font color set. */
-main section, footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: rgb(92, 69, 92);
-    }
+main section,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(92, 69, 92);
+  font-size: 2.5rem;
+}
 /* The h2 tags are formatted so that they appear as a sidebar in the desktop view but as the screen becomes smaller they become headers of each section/article. A border appears on the right at 15% of the screensize for the desktop view. This border switches to being a bottom border with media queries for different sized screens. */
 h2 {
-    border-right: .12em solid rgb(68, 66, 66);
-    min-width: 15%;
-    text-align: center;
-    font-size: 2em;
-    margin-right: .2em;
-    margin-top: .2em;
-    }
+  border-right: 0.2rem solid rgb(68, 66, 66);
+  min-width: 15%;
+  text-align: center;
+  font-size: 3rem;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+}
 /* Flex properties set with margin for a nicer appearance to the paragraph "About Me." */
 #about p {
-    display: flex;
-    flex-wrap: wrap;
-    margin: .5em;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
 /* The parent tag is set for proper layout/view of images/projects. Along with the child tag the appearance of the images on the screen is set at the desktop view here. */
 #parent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /* The four images of future projects are all set to 50% so that all four can form a grid using flex properties. */
 #parent .child {
-    display: inline;
-    flex-wrap: wrap; 
-    flex-basis: 50%; 
+  display: inline;
+  flex-wrap: wrap;
+  flex-basis: 50%;
 }
 /* These are the parent tags for the labels of the images/projects and together with their children help position the text of these labels. The font color is set here. */
-#project-1, #project-2, #project-3, #project-4, #project-5  {
-    position: relative;
-    color: rgb(68, 66, 66);
-    }
+#project-1,
+#project-2,
+#project-3,
+#project-4,
+#project-5 {
+  position: relative;
+  color: rgb(68, 66, 66);
+}
 /* All the rest of the formatting of the text of the labels is included here. A background box is put behind the text and formatted. The labels appear 1em from the top of the images. */
-#project-1 > #top-left-1, #project-2 > #top-left-2, #project-3 > #top-left-3, #project-4 > #top-left-4, #project-5 > #top-left-5 {
-    position: absolute;
-    top: 1em;
-    background-color:rgb(197, 248, 229);
-    width: fit-content;
-    font-size: 2em;
-    }
+#project-1 > #top-left-1,
+#project-2 > #top-left-2,
+#project-3 > #top-left-3,
+#project-4 > #top-left-4,
+#project-5 > #top-left-5 {
+  position: absolute;
+  top: 3rem;
+  background-color: rgb(197, 248, 229);
+  width: fit-content;
+  font-size: 4rem;
+  padding-right: 0.9rem;
+}
 /* The first project/image is designed to have a border and the appearance is set out here. Opacity is set to .5 so that the hover function will work well when a mouse hovers over it when using a desktop.*/
 #img-1 {
-    width: 100%;
-    border: solid rgb(197, 248, 229) .4em;
-    margin-bottom: .4em;
-    opacity: .5;
-    } 
+  width: 100%;
+  border: solid rgb(197, 248, 229) 0.4rem;
+  margin-bottom: 0.4rem;
+  opacity: 0.5;
+}
 /* Border for other images of projects set out here. Included seperately to avoid putting a box around profile picture in banner. */
 .img {
-    width: 100%;
-    border: solid rgb(197, 248, 229) .4em;
-    opacity: .5;
-    }  
+  width: 100%;
+  border: solid rgb(197, 248, 229) 0.4rem;
+  opacity: 0.5;
+}
 /* Footer set to have a margin so that text does not hug the bottom of the screen. Added default font-size for footer.*/
 footer {
-    margin-bottom: .5em;
-    font-size: 1em;
-    }
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
 /* List of contact methods included here. Flex properties set for responsiveness and margins set for best appearance. */
 footer ul li {
-    display: inline-flex;
-    justify-content: space-around;
-    margin-left: 2em;
-    margin-top: 1em;
-    }
+  display: inline-flex;
+  justify-content: space-around;
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
 /* Text color of links set when unvisited. */
 a:link {
-    color: rgb(110, 182, 156);
-    }
+  color: rgb(110, 182, 156);
+}
 /* Text color of links set when visited, i.e. after the link has been clicked on. */
 a:visited {
-    color: rgb(110, 182, 156);
-    }
+  color: rgb(110, 182, 156);
+}
 /* Text color changes and box appears when mouse hovers over link. */
 a:hover {
-    background-color: rgb(197, 248, 229);
-    color:rgb(68, 66, 66);
-    }
+  background-color: rgb(197, 248, 229);
+  color: rgb(68, 66, 66);
+}
 /* When mouse hovers over images of projects, the opacity changes to 1 so that the appearance makes it clear the viewer can click on these as links. */
+#img-1:hover {
+  opacity: 1;
+  background-image: url("../images/1.png");
+}
 img:hover {
-    opacity: 1;
-    }
+  opacity: 1;
+}
 /* First set of media queries set for larger tablets or smaller laptops. */
 @media screen and (max-width: 1140px) {
-/* Profile picture set to disappear as the screen gets smaller. */
-    #banner img{
-        height: 0em;
-        width: 0em;
-      }
-      /* The display of the footer list switches to a column once a certain breakpoint is hit. */
-    main section, footer {
-        display: flex;
-        flex-direction: column;
-      }  
-/* The h2 side border switches to being on the bottom so that they underline the h2 tags for smaller screens rather than forming a sidebar. */
-    h2 {
-        border-bottom: .12em solid rgb(68, 66, 66);
-        border-right: none;
-      }
-    }
-    /* Second breakpoint set. */
+  /* Profile picture set to disappear as the screen gets smaller. */
+  #banner img {
+    height: 0rem;
+    width: 0rem;
+  }
+  /* The display of the footer list switches to a column once a certain breakpoint is hit. */
+  main section,
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    border-bottom: 0.2rem solid rgb(68, 66, 66);
+    border-right: none;
+  }
+}
+
 @media screen and (max-width: 825px) {
-    /* Formatting of navbar set so that background color does not vary when read on smaller screens. */
-    nav {
-        background-color: rgb(68, 66, 66);
-        width: 100%;
-    }
-    /* The images of future projects start getting squished at this screensize, so they are set to change to 100% rather than 50% in size to fit the screensize better. */
-    #parent .child {
-        flex-basis: 100%; 
-    }
+  nav {
+    background-color: rgb(68, 66, 66);
+    width: 100%;
   }
- /* Third breakpoint set. Margin eliminated from footer at this point as it started causing formatting issues here. */
+  #parent .child {
+    flex-basis: 100%;
+  }
+}
 @media screen and (max-width: 570px) {
-    footer ul li {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-left: 0em;
-    }
+  footer ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 0rem;
   }
+}
