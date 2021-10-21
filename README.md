@@ -47,6 +47,7 @@ Although we were free to use some creativity, DU's Coding Bootcamp provided a Mo
 ![Mock-Up](assets/images/Mock-Up.png)
 
 ## Usage
+
 - Please see below for examples of this webpage, which demonstrate its responsive design:
 
 ### Desktop View
@@ -62,15 +63,37 @@ Although we were free to use some creativity, DU's Coding Bootcamp provided a Mo
 ![3](assets/images/iPhoneView.png)
 
 ## Credits
+
 - https://unsplash.com/@forhiskingdom
 - https://du.bootcampcontent.com/denver-coding-bootcamp/du-den-virt-fsf-pt-08-2021-u-c/-/tree/master/02-Advanced-CSS/02-Homework
 - https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
-
 ## License
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+MIT License
+
+Copyright (c) [2021] [Colleen Fimister]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Links
+
 [Live Link](https://carlincb.github.io/Portfolio/)
 
 [GitHub Link](https://github.com/carlincb/Portfolio)

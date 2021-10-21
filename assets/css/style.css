@@ -1,6 +1,6 @@
 /* General framework for paper layout set. No margins or fonts by default. Default fonts set. */
 * {
-  font-family: "Indie Flower", cursive;
+  font-family: "Zeyada", cursive;
 }
 /* Default size of font set. */
 html {
@@ -9,6 +9,19 @@ html {
 /* Background color of webpage set. */
 body {
   background-color: rgb(255, 255, 255);
+  position: relative;
+}
+#styling {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -2;
 }
 /* Background color of header set with width and height. Percentages included for measurements for responsive design.*/
 header {
@@ -19,7 +32,7 @@ header {
 /* Text design of header set. Flex properties set for responsive design. Font color, size, and background box of text laid out. The measurement of "em" included throughout for responsive design. */
 header h1 {
   display: inline-flex;
-  background-color: rgb(197, 248, 229);
+  background-color: rgb(84, 131, 114);
   color: rgb(68, 66, 66);
   font-size: 5rem;
   padding-right: 0.9rem;
@@ -34,7 +47,7 @@ nav {
 nav ul li {
   display: inline-flex;
   justify-content: space-around;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-right: 1.5rem;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -43,7 +56,7 @@ nav ul li {
 #banner {
   position: relative;
   color: rgb(68, 66, 66);
-  background-image: url("../images/TeaRoom.png");
+  background-image: url("../images/banner2.png");
   height: 25rem;
   width: 100%;
 }
@@ -51,13 +64,14 @@ nav ul li {
 #banner > #subtitle {
   float: right;
   top: 10rem;
-  background-color: rgb(197, 248, 229);
+  background-color: rgb(84, 131, 114);
   width: fit-content;
   height: fit-content;
   font-size: 4rem;
   margin-top: 17rem;
   padding-right: 0.2rem;
   padding-left: 0.9rem;
+  padding-top: 0.9rem;
 }
 /* Profile picture included with height and width set and margins to position it within banner background image. */
 #banner img {
@@ -73,7 +87,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   color: rgb(92, 69, 92);
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 /* The h2 tags are formatted so that they appear as a sidebar in the desktop view but as the screen becomes smaller they become headers of each section/article. A border appears on the right at 15% of the screensize for the desktop view. This border switches to being a bottom border with media queries for different sized screens. */
 h2 {
@@ -119,23 +133,26 @@ h2 {
 #project-5 > #top-left-5 {
   position: absolute;
   top: 3rem;
-  background-color: rgb(197, 248, 229);
+  background-color: rgb(84, 131, 114);
   width: fit-content;
   font-size: 4rem;
   padding-right: 0.9rem;
+  padding-top: 0.9rem;
 }
 /* The first project/image is designed to have a border and the appearance is set out here. Opacity is set to .5 so that the hover function will work well when a mouse hovers over it when using a desktop.*/
 #img-1 {
   width: 100%;
-  border: solid rgb(197, 248, 229) 0.4rem;
+  border: solid rgb(84, 131, 114) 0.4rem;
   margin-bottom: 0.4rem;
   opacity: 0.5;
 }
 /* Border for other images of projects set out here. Included seperately to avoid putting a box around profile picture in banner. */
 .img {
-  width: 100%;
-  border: solid rgb(197, 248, 229) 0.4rem;
+  max-width: 80%;
+  max-height: 80%;
+  border: solid rgb(84, 131, 114) 0.4rem;
   opacity: 0.5;
+  margin: 2rem;
 }
 /* Footer set to have a margin so that text does not hug the bottom of the screen. Added default font-size for footer.*/
 footer {
@@ -151,15 +168,15 @@ footer ul li {
 }
 /* Text color of links set when unvisited. */
 a:link {
-  color: rgb(110, 182, 156);
+  color: rgb(84, 131, 114);
 }
 /* Text color of links set when visited, i.e. after the link has been clicked on. */
 a:visited {
-  color: rgb(110, 182, 156);
+  color: rgb(84, 131, 114);
 }
 /* Text color changes and box appears when mouse hovers over link. */
 a:hover {
-  background-color: rgb(197, 248, 229);
+  background-color: rgb(84, 131, 114);
   color: rgb(68, 66, 66);
 }
 /* When mouse hovers over images of projects, the opacity changes to 1 so that the appearance makes it clear the viewer can click on these as links. */
@@ -187,6 +204,7 @@ img:hover {
   h2 {
     border-bottom: 0.2rem solid rgb(68, 66, 66);
     border-right: none;
+    margin-top: 2rem;
   }
 }
 
