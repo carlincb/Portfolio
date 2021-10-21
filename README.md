@@ -14,6 +14,7 @@
 - [Credits](#credits)
 - [License](#license)
 - [Links](#links)
+- [Contact](#contact)
 
 ## Installation
 
@@ -40,27 +41,21 @@ Although this is simply a webpage displaying my Portfolio and no installation is
     WHEN I resize the page or view the site on various screens and devices
     THEN I am presented with a responsive layout that adapts to my viewport
 
-### Mock-Up
-
-Although we were free to use some creativity, DU's Coding Bootcamp provided a Mock Up of the general styling attributes they would want us to use in this project.
-
-![Mock-Up](assets/images/Mock-Up.png)
-
 ## Usage
 
 - Please see below for examples of this webpage, which demonstrate its responsive design:
 
 ### Desktop View
 
-![1](assets/images/DesktopView.png)
+![1](assets/images/1.png)
 
 ### iPad View
 
-![2](assets/images/iPadView.png)
+![2](assets/images/2.png)
 
 ### iPhone View
 
-![3](assets/images/iPhoneView.png)
+![3](assets/images/3.png)
 
 ## Credits
 
@@ -97,3 +92,7 @@ SOFTWARE.
 [Live Link](https://carlincb.github.io/Portfolio/)
 
 [GitHub Link](https://github.com/carlincb/Portfolio)
+
+## Contact
+
+Have questions? Please feel free to contact me at carlin.colleen@gmail.com.
