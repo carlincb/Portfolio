@@ -11,6 +11,7 @@ body {
   background-color: rgb(255, 255, 255);
   position: relative;
 }
+/* Background image added. */
 #styling {
   position: absolute;
   height: 100%;
@@ -23,21 +24,23 @@ body {
   opacity: 0.3;
   z-index: -2;
 }
-/* Background color of header set with width and height. Percentages included for measurements for responsive design.*/
+/* Background color of header set with width and height.*/
 header {
   background-color: rgb(68, 66, 66);
   width: 100%;
   height: 10%;
 }
-/* Text design of header set. Flex properties set for responsive design. Font color, size, and background box of text laid out. The measurement of "em" included throughout for responsive design. */
+/* Styling for header set. */
 header h1 {
   display: inline-flex;
   background-color: rgb(84, 131, 114);
   color: rgb(68, 66, 66);
   font-size: 5rem;
   padding-right: 0.9rem;
-  margin-top: 0.9rem;
-  margin-bottom: 0.9rem;
+  padding-left: 0.9rem;
+  padding-top: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 /* Nav bar set to float right for good responsive design. */
 nav {
@@ -52,7 +55,7 @@ nav ul li {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
-/* Banner or background image set. Font color of child "subtitle" set. Image of banner included. Height set. Width set to stretch across the whole viewport.*/
+/* Banner or background image set.*/
 #banner {
   position: relative;
   color: rgb(68, 66, 66);
@@ -97,12 +100,14 @@ h2 {
   font-size: 3rem;
   margin-right: 0.2rem;
   margin-top: 0.2rem;
+  padding: 1rem;
 }
 /* Flex properties set with margin for a nicer appearance to the paragraph "About Me." */
 #about p {
   display: flex;
   flex-wrap: wrap;
   margin: 0.5rem;
+  padding: 1rem;
 }
 /* The parent tag is set for proper layout/view of images/projects. Along with the child tag the appearance of the images on the screen is set at the desktop view here. */
 #parent {
@@ -125,7 +130,7 @@ h2 {
   position: relative;
   color: rgb(68, 66, 66);
 }
-/* All the rest of the formatting of the text of the labels is included here. A background box is put behind the text and formatted. The labels appear 1em from the top of the images. */
+/* All the rest of the formatting of the text of the labels is included here. A background box is put behind the text and formatted. */
 #project-1 > #top-left-1,
 #project-2 > #top-left-2,
 #project-3 > #top-left-3,
@@ -137,22 +142,28 @@ h2 {
   width: fit-content;
   font-size: 4rem;
   padding-right: 0.9rem;
+  padding-left: 0.9rem;
   padding-top: 0.9rem;
 }
-/* The first project/image is designed to have a border and the appearance is set out here. Opacity is set to .5 so that the hover function will work well when a mouse hovers over it when using a desktop.*/
+/* The first project/image is designed to have a border and the appearance is set out here. Opacity is set to .5.*/
 #img-1 {
-  width: 100%;
+  width: 97%;
   border: solid rgb(84, 131, 114) 0.4rem;
   margin-bottom: 0.4rem;
   opacity: 0.5;
+  margin: 1.5rem;
+  padding: 2rem;
 }
 /* Border for other images of projects set out here. Included seperately to avoid putting a box around profile picture in banner. */
 .img {
-  max-width: 80%;
-  max-height: 80%;
+  display: flex;
+  float: left;
+  width: 97%;
+  height: 60vh;
   border: solid rgb(84, 131, 114) 0.4rem;
   opacity: 0.5;
-  margin: 2rem;
+  margin: 1.5rem;
+  padding: 2rem;
 }
 /* Footer set to have a margin so that text does not hug the bottom of the screen. Added default font-size for footer.*/
 footer {
@@ -178,11 +189,11 @@ a:visited {
 a:hover {
   background-color: rgb(84, 131, 114);
   color: rgb(68, 66, 66);
+  border-radius: 0.8rem;
 }
 /* When mouse hovers over images of projects, the opacity changes to 1 so that the appearance makes it clear the viewer can click on these as links. */
 #img-1:hover {
   opacity: 1;
-  background-image: url("../images/1.png");
 }
 img:hover {
   opacity: 1;
@@ -206,6 +217,22 @@ img:hover {
     border-right: none;
     margin-top: 2rem;
   }
+
+  #img-1 {
+    height: 60vh;
+    width: 95vw;
+    margin-bottom: 0rem;
+  }
+
+  .img {
+    display: flex;
+    flex-direction: column;
+    float: none;
+    width: 95vw;
+  }
+  footer {
+    margin-left: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 825px) {
@@ -213,15 +240,35 @@ img:hover {
     background-color: rgb(68, 66, 66);
     width: 100%;
   }
+  nav li {
+    margin-left: 0.9rem;
+  }
   #parent .child {
     flex-basis: 100%;
   }
 }
 @media screen and (max-width: 570px) {
+  footer {
+    text-align: center;
+    margin-left: 0rem;
+  }
   footer ul li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #img-1,
+  .img {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #img-1,
+  .img {
+    height: 30vh;
   }
 }
