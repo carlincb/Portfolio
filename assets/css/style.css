@@ -98,7 +98,7 @@ h2 {
   border-right: 0.2rem solid rgb(68, 66, 66);
   min-width: 15%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.75rem;
   margin-right: 0.2rem;
   margin-top: 0.2rem;
   padding: 1rem;
@@ -223,7 +223,7 @@ img:hover {
   }
 
   #img-1 {
-    height: 60vh;
+    height: 75vh;
     width: 95vw;
     margin-bottom: 0rem;
   }
@@ -233,6 +233,7 @@ img:hover {
     flex-direction: column;
     float: none;
     width: 95vw;
+    height: 75vh;
   }
   footer {
     margin-left: 0.9rem;
@@ -249,6 +250,10 @@ img:hover {
   }
   #parent .child {
     flex-basis: 100%;
+  }
+  #img-1,
+  .img {
+    height: 65vh;
   }
 }
 @media screen and (max-width: 570px) {
