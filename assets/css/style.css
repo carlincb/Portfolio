@@ -1,6 +1,7 @@
 /* General framework for paper layout set. No margins or fonts by default. Default fonts set. */
 * {
   font-family: "Zeyada", cursive;
+  font-weight: bold;
 }
 /* Default size of font set. */
 html {
