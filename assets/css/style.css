@@ -108,7 +108,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0.5rem;
-  padding: 1rem;
+  padding: 8rem;
   font-family: "Cormorant Garamond", serif;
   font-size: 2.3rem;
   font-weight: bold;
@@ -181,6 +181,14 @@ footer ul li {
   margin-right: 3rem;
   margin-top: 1rem;
 }
+.label {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.label2 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
 /* Text color of links set when unvisited. */
 a:link {
   color: rgb(84, 131, 114);
@@ -193,7 +201,6 @@ a:visited {
 a:hover {
   background-color: rgb(84, 131, 114);
   color: rgb(68, 66, 66);
-  border-radius: 0.8rem;
 }
 /* When mouse hovers over images of projects, the opacity changes to 1 so that the appearance makes it clear the viewer can click on these as links. */
 #img-1:hover {
